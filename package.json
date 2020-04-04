@@ -1,8 +1,8 @@
 {
   "name": "workflow",
   "version": "0.0.1",
-  "description": "q",
-  "productName": "q",
+  "description": "Public Investment Programming for the Philippine Agriculture Sector",
+  "productName": "Investment Programming Guidebook",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
   "author": "mlab817 <mlab817@gmail.com>",
@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "quasar": "^1.0.0"
+    "quasar": "^1.0.0",
+    "vue-markdown-loader": "^2.4.1"
   },
   "devDependencies": {
-    "@quasar/app": "^1.0.0"
+    "@quasar/app": "^1.0.0",
+    "@quasar/quasar-app-extension-qmarkdown": "^1.0.24"
   },
   "engines": {
     "node": ">= 10.18.1",

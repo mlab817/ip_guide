@@ -1,7 +1,7 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
+  <q-layout view="lhh Lpr lFf">
+    <q-header>
+      <q-toolbar class="bg-teal">
         <q-btn
           flat
           dense
@@ -12,10 +12,9 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Guidebook on Market-Oriented Public Investment Programming
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -30,7 +29,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Navigation
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -61,41 +60,58 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
-          title: 'Docs',
-          caption: 'quasar.dev',
+            title: 'Home',
+            icon: 'home',
+            link: '/'
+        },
+        {
+          title: 'Chapter 1',
+          caption: 'Background and Rationale',
           icon: 'school',
-          link: 'https://quasar.dev'
+          link: '/chapters/1'
         },
         {
-          title: 'Github',
-          caption: 'github.com/quasarframework',
-          icon: 'code',
-          link: 'https://github.com/quasarframework'
+          title: 'Chapter 2',
+          caption: 'Review of Planning and Investment Programming Practices and Methods',
+          icon: 'school',
+          link: '/chapters/2'
         },
         {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
+          title: 'Chapter 3',
+          caption: 'Discussion of Basic Concepts',
+          icon: 'school',
+          link: '/chapters/3'
         },
         {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
+          title: 'Chapter 4',
+          caption: 'The Market and Market-Oriented Public Investment Programming',
+          icon: 'school',
+          link: '/chapters/4'
         },
         {
-          title: 'Twitter',
-          caption: '@quasarframework',
-          icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
+          title: 'Chapter 5',
+          caption: 'Understand the Setting',
+          icon: 'school',
+          link: '/chapters/5'
         },
         {
-          title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
-        }
+          title: 'Chapter 6',
+          caption: 'Know your market',
+          icon: 'school',
+          link: '/chapters/6'
+        },
+        {
+          title: 'Chapter 7',
+          caption: 'Model the Chain and Identify Interventions',
+          icon: 'school',
+          link: '/chapters/7'
+        },
+        {
+          title: 'Chapter 8',
+          caption: 'Screening and Prioritization of Public Investments',
+          icon: 'school',
+          link: '/chapters/8'
+        },
       ]
     }
   }
